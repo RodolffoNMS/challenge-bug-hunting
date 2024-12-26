@@ -13,10 +13,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MenuController {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        VideoService videoService = new VideoServiceImpl(new FileVideoRepository("videos.txt"));
-        SearchStrategy searchStrategy = new TitleSearchStrategy();
+    private final Scanner scanner = new Scanner(System.in);
+    private final VideoService videoService = new VideoServiceImpl(new FileVideoRepository("videos.txt"));
+    private final SearchStrategy searchStrategy = new TitleSearchStrategy();
 
         while (true) {
             System.out.println("\n=== Sistema de Gerenciamento de Vídeos ===");
