@@ -1,7 +1,6 @@
 package repository;
 
 import model.Video;
-
 import java.util.List;
 
 public interface VideoRepository {

@@ -1,41 +1,26 @@
 package repository;
 
 import model.Video;
+import util.FileHandler;
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FileVideoRepository implements VideoRepository {
-    private final File file;
-
-    public FileVideoRepository(String filePath) {
-        this.file = new File(filePath);
-    }
+    private static final String VIDEO_FILE_PATH = "videos.txt";
 
     @Override
     public void save(Video video) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file, true))) {
-            bw.write(video.toString());
-            bw.newLine();
-        } catch (IOException e) {
-            // Ignorar erros por enquanto
-        }
+        FileHandler.writeToFile(VIDEO_FILE_PATH, video.toString());
     }
 
     @Override
     public List<Video> findAll() {
+        List<String> lines = FileHandler.readFromFile(VIDEO_FILE_PATH);
         List<Video> videos = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                Video video = Video.fromString(line);
-                if (video != null) {
-                    videos.add(video);
-                }
-            }
-        } catch (IOException e) {
-            // Ignorar erros por enquanto
+        for (String line : lines) {
+            // Simplesmente exibe as linhas como strings (não há parsing nesta versão)
+            videos.add(new Video(line, "Descrição não disponível", 0));
         }
         return videos;
     }
