@@ -26,19 +26,7 @@ Antes de começar, certifique-se de que você tem as ferramentas necessárias in
 - Um editor de código ou IDE, como IntelliJ IDEA ou VSCode.
 - Git para versionamento de código.
 
-### 2. Estrutura inicial do projeto
-
-O código será dividido em pacotes para organizar melhor as responsabilidades:
-
-- model: Contém a classe Video.
-- repository: Contém a interface VideoRepository e sua implementação FileVideoRepository.
-- service: Contém a interface VideoService e sua implementação VideoServiceImpl.
-- strategy: Contém estratégias para busca de vídeos (SearchStrategy).
-- main: Contém a classe principal Main.
-
-Você deve clonar o repositório e analisar o código existente para entender como ele funciona.
-
-### 3. Rodando o sistema
+### 2. Rodando o sistema
    Para rodar o sistema, basta compilar e executar o arquivo Main.java. Caso use o IntelliJ basta "dar play" ou, caso utilize o terminal, pode rodar via comando. Por exemplo:
    
 ```
