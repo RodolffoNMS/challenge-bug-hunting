@@ -12,19 +12,24 @@ public class VideoService {
         this.repository = repository;
     }
 
-    public void addVideo(String title, String description, int duration) {
-        if (title == null || title.isBlank()) {
-            throw new IllegalArgumentException("O título não pode ser vazio.");
-        }
-        if (duration <= 0) {
-            throw new IllegalArgumentException("A duração deve ser maior que zero.");
-        }
-
-        Video video = new Video(title, description, duration);
+    public void addVideo(String title, String description, int duration, String category, String publicationDate) {
+        Video video = new Video(title, description, duration, category, publicationDate);
         repository.save(video);
     }
 
     public List<Video> getAllVideos() {
         return repository.findAll();
+    }
+
+    public Video getVideoByTitle(String title) {
+        return repository.findByTitle(title);
+    }
+
+    public void updateVideo(Video video) {
+        repository.update(video);
+    }
+
+    public void deleteVideo(String title) {
+        repository.delete(title);
     }
 }
