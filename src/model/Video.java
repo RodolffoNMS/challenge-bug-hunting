@@ -1,9 +1,9 @@
 package model;
 
 public class Video {
-    private String title;
-    private String description;
-    private int duration; // em minutos
+    private final String title;
+    private final String description;
+    private final int duration; // em minutos
 
     public Video(String title, String description, int duration) {
         this.title = title;

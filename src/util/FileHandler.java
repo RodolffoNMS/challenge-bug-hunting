@@ -9,20 +9,28 @@ public class FileHandler {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
             writer.write(content);
             writer.newLine();
-        } catch (IOException exception) {
-            throw new RuntimeException("Erro!\nNão foi possível escrever no arquivo: " + filePath, exception);
+        } catch (IOException e) {
+            throw new RuntimeException("Erro ao escrever no arquivo: " + filePath, e);
         }
     }
 
     public static List<String> readFromFile(String filePath) {
         List<String> lines = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+        File file = new File(filePath);
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                throw new RuntimeException("Erro ao criar o arquivo: " + filePath, e);
+            }
+        }
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 lines.add(line);
             }
-        } catch (IOException exception) {
-            throw new RuntimeException("Erro!\nNão foi possível ler o arquivo: " + filePath, exception);
+        } catch (IOException e) {
+            throw new RuntimeException("Erro ao ler o arquivo: " + filePath, e);
         }
         return lines;
     }
