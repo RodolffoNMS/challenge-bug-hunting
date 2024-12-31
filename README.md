@@ -33,19 +33,26 @@ Antes de começar, certifique-se de que você tem as ferramentas necessárias in
 - Um editor de código ou IDE, como IntelliJ IDEA ou VSCode.
 - Git para versionamento de código.
 
+### 2. Estrutura inicial do projeto
+
+O código será dividido em pacotes para organizar melhor as responsabilidades:
+
+- model: Contém a classe Video.
+- repository: Contém a interface VideoRepository e sua implementação FileVideoRepository.
+- service: Contém a interface VideoService e sua implementação VideoServiceImpl.
+- strategy: Contém estratégias para busca de vídeos (SearchStrategy).
+- main: Contém a classe principal Main.
+
 Você deve clonar o repositório e analisar o código existente para entender como ele funciona.
 
-## 2 Exemplo de Uso
-
-- Adicionar um Vídeo
-  - Escolha a opção 1 no menu.
-  - Insira o título, descrição e duração do vídeo.
-  - O sistema confirmará que o vídeo foi adicionado com sucesso.
-- Listar Vídeos
-  - Escolha a opção 2 no menu.
-  - O sistema exibirá todos os vídeos cadastrados no formato: Título: <título> | Descrição: <descrição> | Duração: <duração> min
-- Sair
-  - Escolha a opção 3 no menu para encerrar o programa.
+### 3. Rodando o sistema
+   Para rodar o sistema, basta compilar e executar o arquivo Main.java. Caso use o IntelliJ basta "dar play" ou, caso utilize o terminal, pode rodar via comando. Por exemplo:
+   
+```
+javac -d bin src/main/Main.java
+java ./src/main/Main.java
+```
+O sistema permite que o usuário:
 
 ## Boas Práticas Aplicadas
 - Clean Code: Código limpo, legível e fácil de entender.
