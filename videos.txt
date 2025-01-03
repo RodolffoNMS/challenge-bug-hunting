@@ -1,0 +1,70 @@
+O Poderoso Chefão;Um drama sobre a máfia italiana;175;FILME;24/03/1972
+Forrest Gump;A história de um homem com uma vida extraordinária;142;FILME;06/07/1994
+Matrix;Um programador descobre a verdade sobre sua realidade;136;FILME;31/03/1999
+Interestelar;Uma jornada para salvar a humanidade;169;FILME;07/11/2014
+Clube da Luta;Um homem insatisfeito encontra um novo propósito;139;FILME;15/10/1999
+O Senhor dos Anéis: A Sociedade do Anel;A jornada para destruir o Um Anel;178;FILME;19/12/2001
+Star Wars: Uma Nova Esperança;A luta contra o Império Galáctico;121;FILME;25/05/1977
+Vingadores: Ultimato;Os heróis enfrentam Thanos;181;FILME;26/04/2019
+Coringa;A origem do vilão mais icônico de Gotham;122;FILME;04/10/2019
+A Origem;Um ladrão invade sonhos para roubar segredos;148;FILME;16/07/2010
+Gladiador;Um general romano busca vingança;155;FILME;05/05/2000
+Titanic;Uma história de amor no famoso navio;195;FILME;19/12/1997
+O Lobo de Wall Street;A ascensão e queda de um corretor;180;FILME;25/12/2013
+Harry Potter e a Pedra Filosofal;O início da jornada de Harry Potter;152;FILME;16/11/2001
+Pantera Negra;O rei de Wakanda luta para proteger seu povo;134;FILME;16/02/2018
+Homem-Aranha: Sem Volta Para Casa;Peter Parker enfrenta vilões de outras dimensões;148;FILME;17/12/2021
+Django Livre;Um escravo liberto busca resgatar sua esposa;165;FILME;25/12/2012
+Os Incríveis;Uma família de super-heróis enfrenta desafios;115;FILME;05/11/2004
+Toy Story;A vida secreta dos brinquedos;81;FILME;22/11/1995
+Procurando Nemo;Um peixe-palhaço busca seu filho perdido;100;FILME;30/05/2003
+Shrek;Um ogro embarca em uma aventura para salvar uma princesa;90;FILME;18/05/2001
+O Rei Leão;A jornada de Simba para se tornar rei;88;FILME;24/06/1994
+Frozen;Duas irmãs enfrentam desafios em um reino congelado;102;FILME;27/11/2013
+Moana;Uma jovem navega para salvar sua ilha;107;FILME;23/11/2016
+Os Vingadores;Os heróis se unem para salvar o mundo;143;FILME;04/05/2012
+Capitão América: O Primeiro Vingador;A origem do Capitão América;124;FILME;22/07/2011
+Homem de Ferro;O início do Universo Cinematográfico Marvel;126;FILME;02/05/2008
+Thor: Ragnarok;Thor enfrenta Hela e o Ragnarok;130;FILME;03/11/2017
+Guardiões da Galáxia;Um grupo improvável salva a galáxia;121;FILME;01/08/2014
+Doutor Estranho;Um cirurgião aprende as artes místicas;115;FILME;04/11/2016
+Mulher-Maravilha;A origem da heroína amazona;141;FILME;02/06/2017
+Aquaman;O rei de Atlântida luta para unir os oceanos;143;FILME;21/12/2018
+Liga da Justiça;Os heróis se unem para enfrentar uma ameaça global;120;FILME;17/11/2017
+Batman: O Cavaleiro das Trevas;Batman enfrenta o Coringa;152;FILME;18/07/2008
+Logan;A última jornada de Wolverine;137;FILME;03/03/2017
+Deadpool;Um anti-herói irreverente busca vingança;108;FILME;12/02/2016
+Esquadrão Suicida;Vilões são recrutados para missões perigosas;123;FILME;05/08/2016
+Venom;Um jornalista se torna hospedeiro de um simbionte;112;FILME;05/10/2018
+Homem-Formiga;Um ladrão se torna um herói em miniatura;117;FILME;17/07/2015
+Cinderela;A clássica história da garota e o sapatinho de cristal;74;FILME;04/03/1950
+Branca de Neve e os Sete Anões;A primeira animação da Disney;83;FILME;21/12/1937
+A Bela e a Fera;Uma jovem encontra o amor em um castelo encantado;84;FILME;13/11/1991
+Aladdin;Um jovem encontra uma lâmpada mágica;90;FILME;25/11/1992
+Mulan;Uma jovem se disfarça de homem para salvar a China;88;FILME;19/06/1998
+Pocahontas;A história de amor entre uma nativa e um explorador;81;FILME;23/06/1995
+Hércules;O filho de Zeus busca se tornar um herói;93;FILME;27/06/1997
+Tarzan;Um homem criado por gorilas descobre sua origem;88;FILME;18/06/1999
+Zootopia;Uma coelha policial e uma raposa resolvem um mistério;108;FILME;04/03/2016
+Divertida Mente;As emoções de uma garota enfrentam desafios;95;FILME;19/06/2015
+Breaking Bad;Um professor de química se torna um fabricante de metanfetamina;47;SÉRIE;20/01/2008
+Game of Thrones;Famílias nobres lutam pelo controle de Westeros;57;SÉRIE;17/04/2011
+Stranger Things;Crianças enfrentam eventos sobrenaturais em sua cidade;50;SÉRIE;15/07/2016
+The Crown;A história do reinado da Rainha Elizabeth II;58;SÉRIE;04/11/2016
+The Mandalorian;Um caçador de recompensas em uma galáxia distante;40;SÉRIE;12/11/2019
+Friends;Seis amigos enfrentam os altos e baixos da vida em Nova York;22;SÉRIE;22/09/1994
+The Office;O cotidiano de funcionários de um escritório;99;SÉRIE;24/03/2005
+Sherlock;Um detetive moderno resolve crimes em Londres;90;SÉRIE;25/07/2010
+Dark;Mistérios e viagens no tempo em uma pequena cidade alemã;60;SÉRIE;01/12/2017
+The Witcher;Um caçador de monstros em um mundo de fantasia;60;SÉRIE;20/12/2019
+Planeta Terra;Uma visão impressionante da natureza ao redor do mundo;50;DOCUMENTÁRIO;05/03/2006
+O Dilema das Redes;Os impactos das redes sociais na sociedade;94;DOCUMENTÁRIO;09/09/2020
+Blackfish;A história de uma orca em cativeiro;83;DOCUMENTÁRIO;19/07/2013
+Making a Murderer;A história de um homem acusado de assassinato;60;DOCUMENTÁRIO;18/12/2015
+The Last Dance;A carreira de Michael Jordan e o Chicago Bulls;50;DOCUMENTÁRIO;19/04/2020
+13th;Uma análise do sistema prisional nos EUA;100;DOCUMENTÁRIO;07/10/2016
+Our Planet;Explorando a beleza e os desafios do nosso planeta;50;DOCUMENTÁRIO;05/04/2019
+Won't You Be My Neighbor?;A vida e o legado de Fred Rogers;94;DOCUMENTÁRIO;08/06/2018
+Free Solo;A escalada solo de Alex Honnold em El Capitan;100;DOCUMENTÁRIO;28/09/2018
+The Social Dilemma;Os perigos ocultos das redes sociais;94;DOCUMENTÁRIO;09/09/2020
+The office (UK);Versão original da série;20;SÉRIE;03/06/2002
