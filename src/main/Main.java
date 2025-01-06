@@ -2,13 +2,14 @@ package main;
 
 import model.Video;
 import repository.FileVideoRepository;
-import repository.VideoRepository;
+import service.VideoService;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        VideoRepository repository = new FileVideoRepository();
+        VideoService service = new VideoService(new FileVideoRepository());
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -18,32 +19,65 @@ public class Main {
             System.out.println("3. Sair");
             System.out.print("Escolha uma opção: ");
 
-            int option = scanner.nextInt();
-            scanner.nextLine(); // Consumir a quebra de linha
+            int option = getValidIntInput(scanner, "Opção inválida. Escolha uma opção válida (1, 2 ou 3):", 1, 3);
 
             switch (option) {
                 case 1 -> {
                     System.out.print("Título: ");
-                    String title = scanner.nextLine();
-                    System.out.print("Descrição: ");
-                    String description = scanner.nextLine();
-                    System.out.print("Duração (em minutos): ");
-                    int duration = scanner.nextInt();
-                    scanner.nextLine(); // Consumir a quebra de linha
+                    String title = getValidStringInput(scanner, "O título não pode estar vazio. Digite novamente:");
 
-                    Video video = new Video(title, description, duration);
-                    repository.save(video);
-                    System.out.println("Vídeo adicionado com sucesso!");
+                    System.out.print("Descrição: ");
+                    String description = getValidStringInput(scanner, "A descrição não pode estar vazia. Digite novamente:");
+
+                    System.out.print("Duração (em minutos): ");
+                    int duration = getValidIntInput(scanner, "A duração deve ser um número positivo. Digite novamente:", 1, Integer.MAX_VALUE);
+
+                    try {
+                        service.addVideo(title, description, duration);
+                        System.out.println("Vídeo adicionado com sucesso!");
+                    } catch (IllegalArgumentException e) {
+                        System.out.println("Erro: " + e.getMessage());
+                    }
                 }
                 case 2 -> {
-                    System.out.println("\n=== Lista de Vídeos ===");
-                    repository.findAll().forEach(System.out::println);
+                    List<Video> videos = service.getAllVideos();
+                    if (videos.isEmpty()) {
+                        System.out.println("Nenhum vídeo encontrado.");
+                    } else {
+                        System.out.println("\n=== Lista de Vídeos ===");
+                        videos.forEach(System.out::println);
+                    }
                 }
                 case 3 -> {
                     System.out.println("Saindo...");
                     return;
                 }
-                default -> System.out.println("Opção inválida.");
+            }
+        }
+    }
+
+    private static int getValidIntInput(Scanner scanner, String errorMessage, int min, int max) {
+        while (true) {
+            try {
+                int input = Integer.parseInt(scanner.nextLine());
+                if (input >= min && input <= max) {
+                    return input;
+                } else {
+                    System.out.println(errorMessage);
+                }
+            } catch (NumberFormatException e) {
+                System.out.println(errorMessage);
+            }
+        }
+    }
+
+    private static String getValidStringInput(Scanner scanner, String errorMessage) {
+        while (true) {
+            String input = scanner.nextLine().trim();
+            if (!input.isEmpty()) {
+                return input;
+            } else {
+                System.out.println(errorMessage);
             }
         }
     }
