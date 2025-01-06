@@ -1,14 +1,23 @@
-# Versão 2: Sistema Básico de Gerenciamento de Vídeos
-### Este é um sistema simples para gerenciar vídeos, permitindo adicionar e listar vídeos. O projeto foi desenvolvido em Java. Busquei seguir as boas práticas e conceitos de **SRP (Single Responsibility Principle)** e **KISS (Keep It Simple, Stupid)**.
+# Versão 3: Sistema Básico de Gerenciamento de Vídeos
+### Este é um sistema simples de gerenciamento de vídeos, desenvolvido em Java, que permite adicionar, listar, pesquisar, editar e excluir vídeos. Os dados dos vídeos são armazenados em um arquivo de texto (videos.txt), utilizando o padrão de repositório para persistência. Busquei seguir as boas práticas e conceitos de **SRP (Single Responsibility Principle)** e **KISS (Keep It Simple, Stupid)**.
 
 ## Funcionalidades:
-- **Adicionar Vídeo**: Permite adicionar um vídeo com título, descrição e duração.
-- **Listar Vídeos**: Exibe todos os vídeos cadastrados.
-- **Persistência de Dados**: Os vídeos são armazenados em um arquivo de texto (`videos.txt`).
+- Adicionar vídeo: Permite adicionar um novo vídeo ao sistema.
+- Listar vídeos: Exibe todos os vídeos cadastrados.
+- Pesquisar vídeo por título: Busca um vídeo pelo título.
+- Editar vídeo: Permite editar as informações de um vídeo existente.
+- Excluir vídeo: Remove um vídeo do sistema.
+- Persistência: Os dados são armazenados em um arquivo de texto para garantir que as informações sejam mantidas entre execuções.
+
 
 ## Estrutura do Projeto
+### O projeto segue uma arquitetura modular, com separação de responsabilidades em pacotes:
 
-A estrutura do projeto foi organizada para separar responsabilidades e facilitar a manutenção:
+- main: Contém a classe principal (Main) que gerencia a interação com o usuário.
+- model: Define a classe Video, que representa o modelo de dados.
+- repository: Contém a interface VideoRepository e sua implementação FileVideoRepository, responsável pela persistência dos dados.
+- service: Contém a classe VideoService, que encapsula a lógica de negócios.
+- util: Contém a classe FileHandler, que fornece utilitários para manipulação de arquivos.
 
 
 ````
