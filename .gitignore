@@ -1,3 +1,8 @@
+# Ignorar:
+challenge-bug-hunting.iml
+videos.txt
+
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
