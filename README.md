@@ -95,5 +95,3 @@ Você deve clonar o repositório e analisar o código existente para entender co
   2. Insira o título do vídeo que deseja buscar.
 
 ## Desenvolvido com 💻 e ☕ por RodolffoNMS.
-
-
