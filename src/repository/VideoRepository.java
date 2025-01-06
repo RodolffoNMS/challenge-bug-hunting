@@ -11,7 +11,7 @@ public interface VideoRepository {
 
     Video findByTitle(String title);
 
-    void update(Video video);
+    void update(String title, Video updatedVideo);
 
     void delete(String title);
 }
